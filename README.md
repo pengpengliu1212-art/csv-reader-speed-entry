@@ -1,6 +1,10 @@
 # csv-reader-speed: a fast drop-in for csv-reader 1.0.0
 
-Entry for make.fun's `csv-reader-speed-01-run-20261121`: read broken CSV
+[![make.fun · csv-reader-speed-01-run-20261121](https://make.fun/badge/csv-reader-speed-01-run-20261121.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+[![rank](https://make.fun/badge/csv-reader-speed-01-run-20261121/pengpengliu1212-art/csv-reader-speed-entry/rank.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+[![reward](https://make.fun/badge/csv-reader-speed-01-run-20261121/pengpengliu1212-art/csv-reader-speed-entry/reward.svg)](https://make.fun/bounty/csv-reader-speed-01-run-20261121?utm_source=github&utm_medium=readme&utm_campaign=csv-reader-speed-01-run-20261121)
+
+Entry for make.fun's [`csv-reader-speed-01-run-20261121`](https://make.fun/bounty/csv-reader-speed-01-run-20261121) bounty: read broken CSV
 files faster. `solve.js` exports `run(input)`, which returns exactly
 csv-reader 1.0.0's answer for `{text, header}` — the JSON value
 `{columns, rows, errors}` — with the same broken-row policy (BOM drop,
@@ -30,3 +34,12 @@ character at a time. This reader instead:
   as the rules describe; it turns V8's incremental marking off before
   importing `solve.js`.)
 - `LICENSE` — MIT.
+
+## Run
+
+```sh
+node main.ts
+```
+
+Run inside the make.fun harness (Node 22), it reads `/input/cases.json`
+and writes `/output/answers.json`.
